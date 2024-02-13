@@ -676,6 +676,27 @@
   \end{tabular*}%
 }
 
+
+
+
+% User-defined (NK) version of (cventry), to make it thinner and without a subtitle/position
+% Usage: \cventrythin{<title>}{<date>}{<description>}
+\newcommand*{\cventrythin}[3]{%
+  \vspace{-2.0mm}
+  \setlength\tabcolsep{0pt}
+  \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+    
+    \entrytitlestyle{\textbf{\footnotesize{#1}}} & \entrylocationstyle{#2} \\
+    \ifstrempty{#3}
+      {}
+      {\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#3}} \\}
+    
+  \end{tabular*}%
+}
+
+
+
 % Define an environment for cvsubentry
 \newenvironment{cvsubentries}{%
   \begin{center}

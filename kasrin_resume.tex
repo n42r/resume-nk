@@ -60,8 +60,9 @@
 
 
 \newcommand{\see}[1]{\textit{(See \urll{#1} for more)}}
-\newcommand{\urll}[1]{\textcolor{lblue}{\underline{\href{https://#1}{#1}}}}
+\newcommand{\urll}[1]{\textcolor{lblue}{\href{https://#1}{\textbf{#1}}}}
 
+\newcommand{\urlll}[2]{\textcolor{lblue}{\href{https://#1}{#2}}}
 
 % END OF USER DEFINED
 %-------------------------------------------------------------------------------
@@ -141,8 +142,8 @@
 %-------------------------------------------------------------------------------
 \input{resume/summary.tex}
 \input{resume/projects.tex}
-\input{resume/skills.tex}
 \input{resume/employment.tex}
+\input{resume/skills.tex}
 \input{resume/education.tex}
 %\input{resume/publications.tex}
 \input{resume/languages.tex}
