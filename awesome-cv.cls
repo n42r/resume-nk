@@ -651,6 +651,7 @@
   \sectionstyle{#1}
   \phantomsection
   \color{sectiondivider}\vhrulefill{0.9pt}
+  \vspace{2ex}% added by NK on 11.08.2025
 }
 
 % Define a subsection for CV
@@ -693,7 +694,8 @@
     \ifstrempty{#5}
       {}
       {\multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}} \\}
-  \end{tabular*}%
+  \end{tabular*}
+  \vspace{1ex}%added ny NK 11.08.2025
 }
 
 
